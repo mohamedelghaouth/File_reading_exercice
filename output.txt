@@ -1,0 +1,18 @@
+output:
+    Number of lines: 11
+    Number of characters: 140
+    Number of spaces: 39
+    Number of letters: 107
+    Number of figures: 4
+    Number of other characters: 13
+    Number of words: 20
+    Number of 1 letter words: 4
+    Number of 2 letter words: 5
+    Number of 3 letter words: 4
+    Number of 4 letter words: 1
+    Number of 5 letter words: 1
+    Number of 6 letter words: 1
+    Number of 10 letter words: 3
+    Number of 16 letter words: 1
+
+    
