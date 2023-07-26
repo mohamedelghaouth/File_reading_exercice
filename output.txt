@@ -1,7 +1,7 @@
 output:
     Number of lines: 11
     Number of characters: 140
-    Number of spaces: 39
+    Number of space symbol: 39
     Number of letters: 107
     Number of figures: 4
     Number of other characters: 13
