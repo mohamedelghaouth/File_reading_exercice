@@ -13,26 +13,28 @@ export function getNumberOfLetters(fileContent) {
 }
 
 export function getNumberOfSpace(fileContent) {
-  let regex = /\s/gu;
+  let regex = /(?!\n)\s/gu;
   return (fileContent.match(regex) || []).length;
 }
 
 export function getNumberOfCharacters(fileContent) {
-  let regex = /[^\s]/gu;
+  let regex = /./gms;
   return (fileContent.match(regex) || []).length;
 }
 
 export function getNumberOfFigures(fileContent) {
-  let regex = /^\d+\s|(?<=\s)\d+(?=\s)|\s\d+$/g;
+  //let regex = /^\d+\s|(?<=\s)\d+(?=\s)|\s\d+$/g;
+  let regex = /\d/g;
   return (fileContent.match(regex) || []).length;
 }
 
 export function getNumberOfOtherCharacters(fileContent) {
-  let regex = /[^\s\w]/gu;
+  let regex = /\n|[^\s\w]/gu;
   return (fileContent.match(regex) || []).length;
 }
 
 export function getNumberOfWords(fileContent) {
-  const regex = /(?<=\s)\b[a-zA-Z]+\b(?=\s)/gm;
+  //const regex = /(?<=\s)\b[a-zA-Z]+\b(?=\s)/gm;
+  const regex = /\b[a-zA-Z]+\b/g;
   return fileContent.match(regex) || [];
 }

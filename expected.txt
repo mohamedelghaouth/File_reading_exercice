@@ -1,0 +1,18 @@
+Number of words: 78881
+Number of words of 1 letter: 5236
+Number of words of 2 letters: 14713
+Number of words of 3 letters: 16045
+Number of words of 4 letters: 14789
+Number of words of 5 letters: 9656
+Number of words of 6 letters: 6081
+Number of words of 7 letters: 4743
+Number of words of 8 letters: 3218
+Number of words of 9 letters: 2092
+Number of words of 10 letters: 1210
+Number of words of 11 letters: 633
+Number of words of 12 letters: 272
+Number of words of 13 letters: 105
+Number of words of 14 letters: 64
+Number of words of 15 letters: 19
+Number of words of 16 letters: 4
+Number of words of 17 letters: 1

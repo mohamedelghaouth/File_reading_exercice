@@ -1,18 +1,18 @@
-output:
-    Number of lines: 11
-    Number of characters: 140
-    Number of space symbol: 39
-    Number of letters: 107
-    Number of figures: 4
-    Number of other characters: 13
-    Number of words: 20
-    Number of 1 letter words: 4
-    Number of 2 letter words: 5
-    Number of 3 letter words: 4
-    Number of 4 letter words: 1
-    Number of 5 letter words: 1
-    Number of 6 letter words: 1
-    Number of 10 letter words: 3
-    Number of 16 letter words: 1
-
-    
+Number of words: 78795
+Number of words of 1 letter: 5219
+Number of words of 2 letters: 14656
+Number of words of 3 letters: 16054
+Number of words of 4 letters: 14787
+Number of words of 5 letters: 9655
+Number of words of 6 letters: 6085
+Number of words of 7 letters: 4737
+Number of words of 8 letters: 3212
+Number of words of 9 letters: 2089
+Number of words of 10 letters: 1207
+Number of words of 11 letters: 632
+Number of words of 12 letters: 269
+Number of words of 13 letters: 105
+Number of words of 14 letters: 64
+Number of words of 15 letters: 19
+Number of words of 16 letters: 4
+Number of words of 17 letters: 1

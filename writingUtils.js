@@ -9,18 +9,32 @@ import {
   getNumberOfSpace,
 } from "./regexUtils.js";
 
-export function getResult(fileContent) {
-  let output = `output:
-    Number of lines: ${getNumberOfLine(fileContent)}
-    Number of characters: ${getNumberOfCharacters(fileContent)}
-    Number of space symbol: ${getNumberOfSpace(fileContent)}
-    Number of letters: ${getNumberOfLetters(fileContent)}
-    Number of figures: ${getNumberOfFigures(fileContent)}
-    Number of other characters: ${getNumberOfOtherCharacters(fileContent)}
-    ${printWordsStatistics(getNumberOfWords(fileContent))}
-    `;
+function getCharactersResult(fileContent) {
+  let output = `Number of characters (total): ${getNumberOfCharacters(
+    fileContent
+  )}
+Number of letters: ${getNumberOfLetters(fileContent)}
+Number of digits: ${getNumberOfFigures(fileContent)}
+Number of spaces: ${getNumberOfSpace(fileContent)}
+Number of other characters: ${getNumberOfOtherCharacters(fileContent)}`;
 
   return output;
+}
+
+function getLinesResult(fileContent) {
+  let output = `Number of lines: ${getNumberOfLine(fileContent)}`;
+
+  return output;
+}
+
+export function getResult(fileContent, firstLine) {
+  if (firstLine === "--Lines--") {
+    return getLinesResult(fileContent);
+  } else if (firstLine === "--Characters--") {
+    return getCharactersResult(fileContent);
+  } else {
+    return `${printWordsStatistics(getNumberOfWords(fileContent))}`;
+  }
 }
 
 function addWordInfToMap(wordsInfMap, word) {
@@ -42,9 +56,14 @@ function getWordsInfMap(wordMatchingResult) {
 
 function printWordsStatistics(wordMatchingResult) {
   let wordsInfMap = getWordsInfMap(wordMatchingResult);
-  let result = `Number of words: ${wordMatchingResult.length}\n`;
+  let result = `Number of words: ${wordMatchingResult.length}`;
   for (const worldInf of wordsInfMap.entries()) {
-    result += `    Number of ${worldInf[0]} letter words: ${worldInf[1]}\n`;
+    if (worldInf[0] === 1) {
+      result += `\nNumber of words of ${worldInf[0]} letter: ${worldInf[1]}`;
+    } else {
+      result += `\nNumber of words of ${worldInf[0]} letters: ${worldInf[1]}`;
+    }
   }
+  let res = "";
   return result;
 }
